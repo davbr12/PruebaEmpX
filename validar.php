@@ -12,7 +12,7 @@ $resultado=mysqli_query($conexion,$consulta);
 $filas=mysqli_fetch_array($resultado);
 
 if($filas['idRol']==1){ //administrador
-    header("location:Vista/indexAdmin.php");
+    header("location:view/indexAdmin.php");
 
 }else
 if($filas['idRol']==2){ //cliente
