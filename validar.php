@@ -4,7 +4,7 @@ $contrasena=$_POST['password'];
 session_start();
 $_SESSION['usuario']=$usuario;
 
-$conexion=mysqli_connect("localhost","u233272733_x","Guatemala2050.","u233272733_X");
+$conexion=mysqli_connect("localhost","root","sprueba2024Jl","u233272733_X");
 
 $consulta="SELECT*FROM USUARIO where correo='$usuario' and password='$contrasena'";
 $resultado=mysqli_query($conexion,$consulta);
@@ -21,7 +21,7 @@ header("location:empleado.php");
 else{
     ?>
     <?php
-    include("index-X.php");
+    include("index.html");
     ?>
     <h1 class="bad">ERROR EN LA AUTENTIFICACIÓN</h1>
     <?php
