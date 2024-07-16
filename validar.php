@@ -4,7 +4,7 @@ $contrasena=$_POST['password'];
 session_start();
 $_SESSION['usuario']=$usuario;
 
-$conexion=mysqli_connect("localhost","root","sprueba2024Jl","u233272733_X");
+$conexion=mysqli_connect("localhost","root","sprueba2024JI","u233272733_X");
 
 $consulta="SELECT*FROM USUARIO where correo='$usuario' and password='$contrasena'";
 $resultado=mysqli_query($conexion,$consulta);
