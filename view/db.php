@@ -2,7 +2,7 @@
 session_start();
 
 $conn = mysqli_connect(
-  'localhost',
+  '165.227.219.126',
   'root',
   'sprueba2024JI',
   'u233272733_X'
